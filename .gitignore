@@ -211,8 +211,11 @@ __marimo__/
 *.json
 *.zip
 data_offical/
+debug/
+json_maps/
 out_json/
-LLC_zh-CN/
+LLC_zh-CN*/
+tools/
 LocalizeTemp_jp/
 !manifest.json
 !localize_*.zip

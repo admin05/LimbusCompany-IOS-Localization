@@ -1,8 +1,11 @@
 [![Stable](https://img.shields.io/github/v/release/ghcruise/LimbusCompany-IOS-Localization?label=stable)](https://github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest)
-![Downloads](https://img.shields.io/github/downloads/ghcruise/LimbusCompany-IOS-Localization/total)
+![Downloads](https://img.shields.io/github/downloads/ghcruise/LimbusCompany-IOS-Localization/total)  
+![Launches](https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.json&label=game%20launches&logo=github&color=green)
+
+
 # LimbusCompany-IOS-Localization
 本文将介绍一种《边狱公司》（Limbus Company）iOS 的客户端汉化方案。   
-适用于不想使用**Q公司**、**K公司**、**O公司**等加速器产品，且有其他代理工具的人群   
+适用于不想使用**Q公司**、**K公司**、**O公司**、**U公司**等加速器产品，且有其他代理工具的人群   
 
 ## 声明
 - **前提：有其他代理工具（如Shadowrocket、Surge等）**
