@@ -17,17 +17,17 @@
 
 ## 声明
 - **前提：有其他代理工具（如Shadowrocket、Surge等）**
-- 汉化资源来自[LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)，遵循 [**CC BY-NC-SA 4.0 协议**](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
-- 包含战斗气泡，来自[Bilibili调爪](https://space.bilibili.com/485880984)
+  - 如果您能够直连进入游戏，可以使用 [**ProxyPin**](https://apps.apple.com/app/proxypin/id6450932949) 代替上述代理工具，且无需节点 [[查看教程（施工中）]()]
+- 汉化资源来自 [LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)，遵循 [**CC BY-NC-SA 4.0 协议**](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
+- 包含战斗气泡，文本来自 [Bilibili调爪](https://space.bilibili.com/485880984)
 - 关键词彩色高亮
-- 剧情故事中的人物名和称号已汉化
-- 本项目实现的是对游戏内**日语**替换，因此选择日语才可以看到汉化效果。同样地，可以参考下文 [详细原理](#原理简介) 实现对韩语或英语的替换，同样可以达到本项目的效果
-- 由于IOS客户端字库限制，本项目在尽可能保留原意的前提下对汉化资源中的部分文本进行了替换  
-[字符映射表（施工中）]()
+- 剧情故事中的人物名和称号**完全汉化**
+- 本项目实现的是对游戏内**日语**替换，因此选择**日语**才可以看到汉化效果。同样地，可以参考下文 [详细原理](#原理简介) 实现对韩语或英语的替换，同样可以达到本项目的效果
+- 由于IOS客户端字库限制，本项目在尽可能保留原意的前提下对汉化资源中的部分简体文本进行了替换  
 
 
 ## 原理简介
-核心原理是通过 **中间人（Man-in-the-Middle）代理** 拦截游戏 API 返回的数据，并在返回客户端之前进行资源替换，从而实现翻译。  
+核心原理是通过 **中间人（Man-in-the-Middle）代理** 拦截游戏 API 返回的数据，并在返回客户端之前进行资源替换，从而实现翻译效果。  
 
 [详细原理（施工中）]()
 ## 使用方法 
@@ -46,21 +46,21 @@
 ---
 ### 代理软件配置
    
-**如果你安装了[Script-Hub模块](https://github.com/Script-Hub-Org/Script-Hub/wiki/%E5%AE%89%E8%A3%85)，则可以点击下方链接一键导入**   
-- [Shadowrocket模块](https://api.boxjs.app/shadowrocket/install?module=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dshadowrocket-module%26del%3Dtrue%26jqEnabled%3Dtrue)  
+**如果你安装了 [Script-Hub 模块](https://github.com/Script-Hub-Org/Script-Hub/wiki/%E5%AE%89%E8%A3%85)，则可以点击下方链接一键导入**   
+- [Shadowrocket 模块](https://api.boxjs.app/shadowrocket/install?module=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dshadowrocket-module%26del%3Dtrue%26jqEnabled%3Dtrue)  
   
-- [Stash覆写](https://api.boxjs.app/stash/install-override?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.stoverride%3Ftype%3Dsurge-module%26target%3Dstash-stoverride%26del%3Dtrue%26jqEnabled%3Dtrue)  
+- [Stash 覆写](https://api.boxjs.app/stash/install-override?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.stoverride%3Ftype%3Dsurge-module%26target%3Dstash-stoverride%26del%3Dtrue%26jqEnabled%3Dtrue)  
   
-- [Surge模块](https://api.boxjs.app/surge/install-module?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue&name=)  
+- [Surge 模块](https://api.boxjs.app/surge/install-module?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue&name=)  
 
-- [Loon插件](https://www.nsloon.com/openloon/import?plugin=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.plugin%3Ftype%3Dsurge-module%26target%3Dloon-plugin%26del%3Dtrue%26jqEnabled%3Dtrue)   
+- [Loon 插件](https://www.nsloon.com/openloon/import?plugin=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.plugin%3Ftype%3Dsurge-module%26target%3Dloon-plugin%26del%3Dtrue%26jqEnabled%3Dtrue)   
     
 
 
 **如果你没有安装Script-Hub模块，建议你安装一个。如果实在不想安装，请看下文**
-- Shadowrocket 模块  
-复制下方链接，导入Shadowrocket模块中并启用
-    - [Shadowrocket 模块](https://raw.githubusercontent.com/ghcruise/LimbusCompany-IOS-Localization/refs/heads/main/LimbusCompanyIOSLocalization.module)
+- [Shadowrocket 模块](https://raw.githubusercontent.com/ghcruise/LimbusCompany-IOS-Localization/refs/heads/main/LimbusCompanyIOSLocalization.module)  
+复制上方链接，导入Shadowrocket模块中并启用
+  
 - Surge & Loon & Quantumult X  
 ~~由于作者没有这些代理工具，所以也不会有这部分的内容~~  
   
@@ -69,9 +69,11 @@
 ### 启动游戏
 确认
 - 启用VPN
-- 启用上述配置
+- 启用上述配置  
 
-**进入游戏会提示下载约20Mb资源文件则说明汉化成功**
+资源下载
+- **首次进入游戏会提示下载约20Mb资源文件则说明汉化成功**  
+- **导入模块后汉化会随本项目自动更新，无需任何手动操作，每次更新显示约4~5Mb，实际仍会下载约20Mb资源文件**
 
 ## 最后
 - 如果你觉得本项目对你有帮助，请帮忙点个 Star，这是对我最好的支持！
@@ -79,7 +81,7 @@
 - 对文本或其他方面有建议的可以在 Issue 中提出
 
 ## 致谢
-Original project:
+感谢都市零协会的无私付出:
 https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany
 
 Licensed under CC [BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
