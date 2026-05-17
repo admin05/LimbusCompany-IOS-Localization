@@ -17,7 +17,7 @@
 
 ## 声明
 - **前提：有其他代理工具（如Shadowrocket、Surge等）**
-  - 如果您能够直连进入游戏，可以使用 [**ProxyPin**](https://github.com/wanghongenpin/proxypin) 代替上述代理工具，且无需节点  
+  - 如果您能够直连进入游戏，可以使用 Shadowrocket ，无需节点  
 - 汉化资源来自 [LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)，遵循 [**CC BY-NC-SA 4.0 协议**](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
 - 包含战斗气泡，文本来自 [Bilibili调爪](https://space.bilibili.com/485880984)
 - 关键词彩色高亮
@@ -64,11 +64,7 @@
 - Surge & Loon & Quantumult X  
 ~~由于作者没有这些代理工具，所以也不会有这部分的内容~~  
    
-     
 
-**如果你所在的地区可以不通过代理或加速器进入游戏**  
-- 推荐使用 [**ProxyPin**](https://github.com/wanghongenpin/proxypin)  
-具体操作方法还在测试中
 
 ---
 ### 启动游戏
