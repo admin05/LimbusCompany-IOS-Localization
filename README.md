@@ -59,8 +59,7 @@
 
 **如果你没有安装Script-Hub模块，建议你安装一个。如果实在不想安装，请看下文**
 - [Shadowrocket 模块](https://raw.githubusercontent.com/ghcruise/LimbusCompany-IOS-Localization/refs/heads/main/LimbusCompanyIOSLocalization.module)  
-复制上方链接，导入Shadowrocket模块中并启用
-  
+复制上方链接，导入Shadowrocket模块中并启用 ([如何导入模块](https://github.com/LOWERTOP/Shadowrocket#%E6%A8%A1%E5%9D%97))  
 - Surge & Loon & Quantumult X  
 ~~由于作者没有这些代理工具，所以也不会有这部分的内容~~  
    
