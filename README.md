@@ -18,7 +18,7 @@
 
 ## 声明
 - **前提：有其他代理工具（如Shadowrocket、Surge等）**
-  - 如果您能够直连进入游戏，可以使用 Shadowrocket ，无需节点  
+  - 如果您所在的地区有通畅的国际互联网连接，可以使用 Shadowrocket ，无需节点  
 - 汉化资源来自 [LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)，遵循 [**CC BY-NC-SA 4.0 协议**](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
 - 包含战斗气泡，文本来自 [Bilibili调爪](https://space.bilibili.com/485880984)
 - 关键词彩色高亮
@@ -61,7 +61,7 @@
 **如果你没有安装Script-Hub模块，建议你安装一个。如果实在不想安装，请看下文**
 - [Shadowrocket 模块](https://raw.githubusercontent.com/ghcruise/LimbusCompany-IOS-Localization/refs/heads/main/LimbusCompanyIOSLocalization.module)  
 复制上方链接，导入Shadowrocket模块中并启用 ([如何导入模块](https://github.com/LOWERTOP/Shadowrocket#%E6%A8%A1%E5%9D%97))  
-- Surge & Loon & Quantumult X  
+- Surge & Loon & Quantumult X & 其他  
 ~~由于作者没有这些代理工具，所以也不会有这部分的内容~~  
    
 
@@ -86,4 +86,4 @@
 感谢都市零协会的无私付出:
 https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany
 
-Licensed under CC [BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
