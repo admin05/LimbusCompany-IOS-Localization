@@ -1,91 +1,80 @@
-<h1 align="center">LimbusCompany-IOS-Localization</h1>
-<p align="center">
-  边狱公司 IOS客户端 中文本地化
-</p>
-<p align="center">
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest><img src="https://img.shields.io/github/v/release/ghcruise/LimbusCompany-IOS-Localization?label=Version&style=for-the-badge&cacheSeconds=1800" /></a>
-  <a href=https://creativecommons.org/licenses/by-nc-sa/4.0><img src="https://img.shields.io/badge/Licence-CC_BY--NC--SA_4.0-blue?style=for-the-badge" /></a>
-  <a href="https://t.me/+EqcZfY8aKAo1ZWE1"><img src="https://img.shields.io/badge/Telegram-group-blue?style=for-the-badge&logo=telegram&logoColor=white" /></a>
-</p>
-<p align="center">
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.json&label=Game%20Launches&logo=github&color=D4AF37&style=for-the-badge&cacheSeconds=60" /></a>
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.zip&label=Installs&logo=github&color=C0C0C0&style=for-the-badge&cacheSeconds=60" /></a>
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/github/stars/ghcruise/LimbusCompany-IOS-Localization?label=Stars&logo=github&color=CD7F32&style=for-the-badge&cacheSeconds=3600" /></a>
-</p>
+# LimbusCompany-IOS-Localization
 
-本文将介绍一种《边狱公司》（Limbus Company）iOS 的客户端汉化方案。   
-适用于不想使用**Q公司**、**K公司**、**O公司**、**U公司**等加速器产品，且有其他代理工具的人群   
+边狱公司 iOS 客户端中文本地化配置。本仓库提供可直接导入 Loon 的插件文件，不再依赖 Script-Hub 在线转换。
 
-## 声明
-- **前提：有其他代理工具（如Shadowrocket、Surge等）**
-  - 如果您所在的地区有通畅的国际互联网连接，可以使用 Shadowrocket ，无需节点  
-- 汉化资源来自 [LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)，遵循 [**CC BY-NC-SA 4.0 协议**](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
-- 包含战斗气泡，文本来自 [Bilibili调爪](https://space.bilibili.com/485880984)
-- 关键词彩色高亮
-- 剧情故事中的人物名和称号**完全汉化**
-- 本项目实现的是对游戏内**日语**替换，因此选择**日语**才可以看到汉化效果。同样地，可以参考下文 [详细原理](#原理简介) 实现对韩语或英语的替换，同样可以达到本项目的效果
-- 由于IOS客户端字库限制，本项目在尽可能保留原意的前提下对汉化资源中的部分简体文本进行了替换  
+## 说明
 
+本仓库基于 [ghcruise/LimbusCompany-IOS-Localization](https://github.com/ghcruise/LimbusCompany-IOS-Localization) 整理，感谢原作者 ghcruise 对 iOS 汉化方案、代理配置和资源分发方式的工作。
 
-## 原理简介
-核心原理是通过 **中间人（Man-in-the-Middle）代理** 拦截游戏 API 返回的数据，并在返回客户端之前进行资源替换，从而实现翻译效果。  
+汉化资源来自 [LocalizeLimbusCompany/LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)，并遵循 `CC BY-NC-SA 4.0` 协议。请仅在协议允许的范围内使用。
 
-[详细原理（施工中）]()
-## 使用方法 
-###  ！！必需！！ MitM配置 - CA证书安装 —— 以 Shadowrocket 为例
-1. 打开Shadowrocket，进入`配置`页面，点击当前使用的规则最右侧的`ⓘ`进入`conf页面`
-2. 进入`HTTPS解密`页面，启用`HTTPS解密`
-3. 在弹出的证书页面选择`生成新的CA证书`并确认
-4. 点击`安装证书`并允许下载描述文件
-5. 在设备的`设置`→`通用`→`VPN与设备管理`页面选择下载的描述文件并安装
-6. 在设备的`设置`→`通用`→`关于本机`→`证书信任设置`启用对安装证书的完全信任   
+## 是否依赖原项目
 
-[另一份教程 （Shadowrocket）](https://github.com/LOWERTOP/Shadowrocket#https%E8%A7%A3%E5%AF%86)  
-  
-其他代理工具请参考各自工具的使用方法  
+当前配置不依赖原项目的 release 下载地址。Loon 插件会把游戏请求重定向到本仓库中的文件：
 
----
-### 代理软件配置
-   
-**如果你安装了 [Script-Hub 模块](https://github.com/Script-Hub-Org/Script-Hub/wiki/%E5%AE%89%E8%A3%85)，则可以点击下方链接一键导入**   
-- [Shadowrocket 模块](https://api.boxjs.app/shadowrocket/install?module=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dshadowrocket-module%26del%3Dtrue%26jqEnabled%3Dtrue)  
-  
-- [Stash 覆写](https://api.boxjs.app/stash/install-override?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.stoverride%3Ftype%3Dsurge-module%26target%3Dstash-stoverride%26del%3Dtrue%26jqEnabled%3Dtrue)  
-  
-- [Surge 模块](https://api.boxjs.app/surge/install-module?url=http%3A%2F%2Fscript.hub%2Ffile%2F_start_%2Fhttps%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.module%2F_end_%2FLimbusCompanyIOSLocalization.sgmodule%3Ftype%3Dsurge-module%26target%3Dsurge-module%26del%3Dtrue%26jqEnabled%3Dtrue&name=)  
+- `manifest.json`
+- `localize_jp.zip`
 
-- [Loon 插件](https://www.nsloon.com/openloon/import?plugin=https%3A%2F%2Fraw.githubusercontent.com%2Fghcruise%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.plugin)   
-    
+因此，本仓库必须保持公开，并且上述两个文件必须保留在 `main` 分支根目录。只要这两个文件存在，Loon 插件就不需要通过 Script-Hub，也不需要访问原项目 release。
 
+## Loon 一键导入
 
-**如果你没有安装Script-Hub模块，建议你安装一个。如果实在不想安装，请看下文**
-- [Shadowrocket 模块](https://raw.githubusercontent.com/ghcruise/LimbusCompany-IOS-Localization/refs/heads/main/LimbusCompanyIOSLocalization.module)  
-复制上方链接，导入Shadowrocket模块中并启用 ([如何导入模块](https://github.com/LOWERTOP/Shadowrocket#%E6%A8%A1%E5%9D%97))  
-- [Loon 插件](https://raw.githubusercontent.com/ghcruise/LimbusCompany-IOS-Localization/refs/heads/main/LimbusCompanyIOSLocalization.plugin)  
-复制上方链接，导入Loon插件中并启用  
-- Surge & Quantumult X & 其他  
-~~由于作者没有这些代理工具，所以也不会有这部分的内容~~  
-   
+安装并信任 MitM 证书后，点击下方链接导入：
 
+[导入 Loon 插件](https://www.nsloon.com/openloon/import?plugin=https%3A%2F%2Fraw.githubusercontent.com%2Fadmin05%2FLimbusCompany-IOS-Localization%2Frefs%2Fheads%2Fmain%2FLimbusCompanyIOSLocalization.plugin)
 
----
-### 启动游戏
-确认
-- 启用VPN
-- 启用上述配置  
+也可以手动复制插件地址导入：
 
-资源下载
-- **首次进入游戏会提示下载约20Mb资源文件则说明汉化成功**  
-- **导入模块后汉化会随本项目自动更新，无需任何手动操作，每次更新显示约4~5Mb，实际仍会下载约20Mb资源文件**
+```text
+https://raw.githubusercontent.com/admin05/LimbusCompany-IOS-Localization/refs/heads/main/LimbusCompanyIOSLocalization.plugin
+```
 
-## 最后
-- 如果你觉得本项目对你有帮助，请帮忙点个 Star，这是对我最好的支持！
-- ~~还不是为了自己在手机上玩得舒服，顺手搞的~~
-- 对文本或其他方面有建议的可以在 Issue 中提出
-- ~~最后还是建了个群~~ 欢迎入群：[Telegram 群组](https://t.me/+EqcZfY8aKAo1ZWE1)  
+## 插件文件区别
+
+- `LimbusCompanyIOSLocalization.plugin`：正式版 Loon 插件，建议日常使用。
+- `LimbusCompanyIOSLocalization-pre-release.plugin`：预发布版 Loon 插件。目前它和正式版使用相同的重写规则、相同的资源地址，区别只有插件名称和描述，方便以后单独测试预发布资源。
+
+如果只是想玩汉化版，使用正式版即可。
+
+## MitM 配置
+
+需要在 Loon 中启用 HTTPS MitM，并安装、信任 Loon 生成的 CA 证书。
+
+插件会声明需要 MitM 的域名：
+
+```text
+*.limbuscompanycdn.org
+```
+
+## 工作原理
+
+插件拦截游戏客户端请求的日语本地化资源，并将其重定向到本仓库提供的中文本地化资源：
+
+```text
+localize_jp.zip -> 本仓库 localize_jp.zip
+LocalizePatchInfo.json -> 本仓库 manifest.json
+```
+
+进入游戏后请在游戏内选择日语。首次生效时，游戏会重新下载本地化资源。
+
+## 维护
+
+如需从 Surge module 重新生成 Loon plugin，可运行：
+
+```bash
+node scripts/generate-loon-plugin.js
+```
+
+该脚本会从以下文件生成对应的 Loon 插件：
+
+- `LimbusCompanyIOSLocalization.module`
+- `LimbusCompanyIOSLocalization-pre-release.module`
 
 ## 致谢
-感谢都市零协会的无私付出:
-https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany
 
-Licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+- 感谢 [ghcruise/LimbusCompany-IOS-Localization](https://github.com/ghcruise/LimbusCompany-IOS-Localization) 提供 iOS 代理汉化方案与原始仓库结构。
+- 感谢 [LocalizeLimbusCompany/LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany) 提供汉化资源。
+
+## 许可证
+
+本仓库保留原项目许可证声明，详见 [LICENCE](./LICENCE)。
