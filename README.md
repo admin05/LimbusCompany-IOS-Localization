@@ -70,6 +70,14 @@ node scripts/generate-loon-plugin.js
 - `LimbusCompanyIOSLocalization.module`
 - `LimbusCompanyIOSLocalization-pre-release.module`
 
+本仓库还提供 GitHub Actions 自动同步上游更新：
+
+- 工作流文件：`.github/workflows/sync-upstream.yml`
+- 默认每天自动检查一次 `ghcruise/LimbusCompany-IOS-Localization`
+- 也可以在 GitHub Actions 页面手动运行 `Sync upstream`
+
+同步流程会合并上游 `main`，重新把运行时资源地址指向本仓库，并重新生成 Loon plugin。运行时 URL 审计失败时，工作流会中止，避免把依赖上游 release 或 Script-Hub 的配置推送出去。
+
 ## 致谢
 
 - 感谢 [ghcruise/LimbusCompany-IOS-Localization](https://github.com/ghcruise/LimbusCompany-IOS-Localization) 提供 iOS 代理汉化方案与原始仓库结构。
