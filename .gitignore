@@ -215,7 +215,9 @@ debug/
 json_maps/
 out_json/
 LLC_zh-CN*/
+BattleSpeechBubbles/
 tools/
 LocalizeTemp_jp/
 !manifest.json
 !localize_*.zip
+.html
