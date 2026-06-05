@@ -42,11 +42,9 @@ jobs:
 
       - name: Commit and push changes
         run: |
-          if git diff --quiet; then
-            echo "No upstream changes to sync."
-            exit 0
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Sync upstream localization assets"
           fi
 
-          git add .
-          git commit -m "Sync upstream localization assets"
           git push
