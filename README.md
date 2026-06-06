@@ -3,21 +3,21 @@
   边狱公司 IOS客户端 中文本地化
 </p>
 <p align="center">
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest><img src="https://img.shields.io/github/v/release/ghcruise/LimbusCompany-IOS-Localization?label=Version&style=for-the-badge&cacheSeconds=1800" /></a>
+  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization/releases/latest><img src="https://img.shields.io/github/v/release/ghcruise/LimbusCompany-IOS-Localization?label=Version&style=for-the-badge" /></a>
   <a href=https://creativecommons.org/licenses/by-nc-sa/4.0><img src="https://img.shields.io/badge/Licence-CC_BY--NC--SA_4.0-blue?style=for-the-badge" /></a>
   <a href="https://t.me/+EqcZfY8aKAo1ZWE1"><img src="https://img.shields.io/badge/Telegram-group-blue?style=for-the-badge&logo=telegram&logoColor=white" /></a>
 </p>
 <p align="center">
   <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.json&label=Game%20Launches&logo=github&color=D4AF37&style=for-the-badge&cacheSeconds=60" /></a>
   <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/badge/dynamic/json?url=https://red-shadow-a504.ghcruise.workers.dev&query=$.zip&label=Installs&logo=github&color=C0C0C0&style=for-the-badge&cacheSeconds=60" /></a>
-  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/github/stars/ghcruise/LimbusCompany-IOS-Localization?label=Stars&logo=github&color=CD7F32&style=for-the-badge&cacheSeconds=3600" /></a>
+  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/github/stars/ghcruise/LimbusCompany-IOS-Localization?label=Stars&logo=github&color=CD7F32&style=for-the-badge" /></a>
 </p>
 
 本文将介绍一种《边狱公司》（Limbus Company）iOS 的客户端汉化方案。   
 适用于不想使用**Q公司**、**K公司**、**O公司**、**U公司**等加速器产品，且有其他代理工具的人群   
 
 ## 声明
-- **前提：有其他代理工具（如Shadowrocket、Surge等）**
+- **前提：有其他代理工具（如Shadowrocket、Stash、~~Surge~~等）**
   - 如果您所在的地区有通畅的国际互联网连接，可以使用 Shadowrocket ，无需节点  
 - 汉化资源来自 [LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)，遵循 [**CC BY-NC-SA 4.0 协议**](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
 - 包含战斗气泡，文本来自 [Bilibili调爪](https://space.bilibili.com/485880984)
