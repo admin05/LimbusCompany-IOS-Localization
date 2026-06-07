@@ -1,8 +1,28 @@
-# LimbusCompany-IOS-Localization
+<h1 align="center">LimbusCompany-IOS-Localization</h1>
+<p align="center">
+  边狱公司 IOS客户端 中文本地化
+</p>
+<p align="center">
+  <a href=https://github.com/admin05/LimbusCompany-IOS-Localization><img src="https://img.shields.io/github/v/release/ghcruise/LimbusCompany-IOS-Localization?label=Upstream%20Version&style=for-the-badge" /></a>
+  <a href=https://creativecommons.org/licenses/by-nc-sa/4.0><img src="https://img.shields.io/badge/Licence-CC_BY--NC--SA_4.0-blue?style=for-the-badge" /></a>
+  <a href="https://t.me/+EqcZfY8aKAo1ZWE1"><img src="https://img.shields.io/badge/Telegram-group-blue?style=for-the-badge&logo=telegram&logoColor=white" /></a>
+</p>
+<p align="center">
+  <a href=https://github.com/ghcruise/LimbusCompany-IOS-Localization><img src="https://img.shields.io/github/stars/ghcruise/LimbusCompany-IOS-Localization?label=Upstream%20Stars&logo=github&color=CD7F32&style=for-the-badge" /></a>
+</p>
 
 边狱公司 iOS 客户端中文本地化配置。本仓库提供可直接导入 Loon 的插件文件，不再依赖 Script-Hub 在线转换。
 
 ## 说明
+
+- **前提：有其他代理工具（如Shadowrocket、Stash、~~Surge~~等）**
+  - 如果您所在的地区有通畅的国际互联网连接，可以使用 Shadowrocket ，无需节点  
+- 汉化资源来自 [LocalizeLimbusCompany](https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany)，遵循 [**CC BY-NC-SA 4.0 协议**](https://creativecommons.org/licenses/by-nc-sa/4.0/)   
+- 包含战斗气泡，文本来自 [Bilibili调爪](https://space.bilibili.com/485880984)
+- 关键词彩色高亮
+- 剧情故事中的人物名和称号**完全汉化**
+- 本项目实现的是对游戏内**日语**替换，因此选择**日语**才可以看到汉化效果。同样地，可以参考下文 [详细原理](#原理简介) 实现对韩语或英语的替换，同样可以达到本项目的效果
+- 由于IOS客户端字库限制，本项目在尽可能保留原意的前提下对汉化资源中的部分简体文本进行了替换  
 
 本仓库基于 [ghcruise/LimbusCompany-IOS-Localization](https://github.com/ghcruise/LimbusCompany-IOS-Localization) 整理，感谢原作者 ghcruise 对 iOS 汉化方案、代理配置和资源分发方式的工作。
 
